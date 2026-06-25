@@ -64,7 +64,7 @@ body {
   font-weight: 900;
 }
 
-.badge {
+.badge, .mini-badge {
   width: fit-content;
   background: var(--red);
   padding: 9px 14px;
@@ -72,6 +72,12 @@ body {
   font-size: 12px;
   font-weight: 900;
   margin-bottom: 18px;
+  display: inline-block;
+}
+
+.mini-badge {
+  margin-bottom: 8px;
+  font-size: 10px;
 }
 
 h1 {
@@ -116,6 +122,11 @@ p {
   color: white;
 }
 
+.blue {
+  background: #0066ff;
+  color: white;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -152,9 +163,27 @@ p {
   padding: 18px;
 }
 
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
 .content h2 {
   color: var(--yellow);
-  margin-bottom: 14px;
+}
+
+.small-whats {
+  background: var(--green);
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
+  padding: 11px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  white-space: nowrap;
 }
 
 .search-box input {
@@ -163,7 +192,51 @@ p {
   border-radius: 16px;
   padding: 16px;
   font-size: 15px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  margin-bottom: 4px;
+}
+
+.chips button {
+  flex: 0 0 auto;
+  border: none;
+  background: rgba(255,255,255,.12);
+  color: white;
+  padding: 11px 14px;
+  border-radius: 999px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.chips button.active {
+  background: var(--yellow);
+  color: var(--blue);
+}
+
+.result-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255,255,255,.78);
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.result-line button {
+  border: 0;
+  border-radius: 999px;
+  background: var(--red);
+  color: white;
+  font-weight: 900;
+  padding: 9px 12px;
+  cursor: pointer;
 }
 
 .products {
@@ -194,6 +267,22 @@ p {
   font-size: 14px;
 }
 
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.meta span {
+  background: rgba(255,255,255,.10);
+  color: rgba(255,255,255,.86);
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
 .product a {
   display: inline-block;
   background: var(--green);
@@ -203,6 +292,12 @@ p {
   padding: 12px 14px;
   border-radius: 999px;
   font-size: 13px;
+}
+
+.empty {
+  text-align: center;
+  padding: 28px;
+  color: rgba(255,255,255,.76);
 }
 
 .bottom-nav {
@@ -241,7 +336,8 @@ p {
 
   .actions {
     display: flex;
-    max-width: 560px;
+    flex-wrap: wrap;
+    max-width: 800px;
   }
 
   .btn {

@@ -8,7 +8,7 @@
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body id="top">
   <main class="app">
     <section class="hero">
       <div class="brand-card">
@@ -21,46 +21,57 @@
       <h1>O hub de quem vive do trabalho.</h1>
 
       <p>
-        Catálogo, atendimento e ferramentas comerciais da Waves Plus em um só lugar.
+        Catálogo, busca por categoria, atendimento e ferramentas comerciais da Waves Plus em um só lugar.
       </p>
 
       <div class="actions">
-        <a class="btn yellow" href="https://drive.google.com/file/d/1JUZRykitPg1_Isv2_Fz4SB7yy80ilMc0/view" target="_blank">
-          Abrir Catálogo
-        </a>
-        <a class="btn green" href="https://wa.me/558530318830?text=Ol%C3%A1%2C%20quero%20atendimento%20pelo%20Waves%20HUB." target="_blank">
-          Falar no WhatsApp
-        </a>
+        <a class="btn yellow" href="#catalogo">Buscar Produtos</a>
+        <a class="btn blue" href="https://drive.google.com/file/d/1JUZRykitPg1_Isv2_Fz4SB7yy80ilMc0/view" target="_blank">Abrir Catálogo PDF</a>
+        <a class="btn green" href="https://wa.me/558530318830?text=Ol%C3%A1%2C%20quero%20atendimento%20pelo%20Waves%20HUB." target="_blank">Falar no WhatsApp</a>
       </div>
     </section>
 
     <section class="grid">
-      <button class="tile" onclick="openSection('catalogo')">
-        <strong>📖 Catálogo</strong>
-        <span>PDF oficial Waves Plus 2026</span>
+      <button class="tile" onclick="filterByCategory('Abrasivos')">
+        <strong>⚙️ Abrasivos</strong>
+        <span>Discos de corte, flap e diamantados</span>
       </button>
 
-      <button class="tile" onclick="openSection('solda')">
-        <strong>🛠 Solda Certa</strong>
-        <span>Guia inteligente de soldagem</span>
+      <button class="tile" onclick="filterByCategory('Solda')">
+        <strong>🛠 Solda</strong>
+        <span>Eletrodos, arame MIG e acessórios</span>
       </button>
 
-      <button class="tile" onclick="openSection('fixa')">
-        <strong>🔩 Fixa Certo</strong>
-        <span>Soluções para fixação</span>
+      <button class="tile" onclick="filterByCategory('Construção')">
+        <strong>🏗 Construção</strong>
+        <span>Andaimes e escoras</span>
       </button>
 
-      <button class="tile" onclick="openSection('calculadoras')">
-        <strong>📐 Calculadoras</strong>
-        <span>Ferramentas comerciais</span>
+      <button class="tile" onclick="filterByCategory('Ferramentas')">
+        <strong>🧰 Ferramentas</strong>
+        <span>Trenas, estiletes e acessórios</span>
       </button>
     </section>
 
-    <section id="content" class="content">
-      <h2>Produtos em destaque</h2>
+    <section id="catalogo" class="content">
+      <div class="section-head">
+        <div>
+          <span class="mini-badge">BUSCA INTELIGENTE</span>
+          <h2>Pesquisar no catálogo</h2>
+        </div>
+
+        <a class="small-whats" target="_blank" href="https://wa.me/558530318830?text=Ol%C3%A1%2C%20quero%20ajuda%20para%20encontrar%20um%20produto%20no%20cat%C3%A1logo%20Waves%20Plus.">WhatsApp</a>
+      </div>
 
       <div class="search-box">
-        <input id="searchInput" type="search" placeholder="Buscar produto, código ou categoria..." oninput="renderProducts()" />
+        <input id="searchInput" type="search" placeholder="Digite produto, código, aplicação ou categoria..." oninput="renderProducts()" />
+      </div>
+
+      <div class="chips" id="chips"></div>
+
+      <div class="result-line">
+        <span id="resultCount">0 produtos encontrados</span>
+        <button onclick="clearFilters()">Limpar filtro</button>
       </div>
 
       <div id="products" class="products"></div>
@@ -69,7 +80,7 @@
 
   <nav class="bottom-nav">
     <a href="#top">Início</a>
-    <a href="https://drive.google.com/file/d/1JUZRykitPg1_Isv2_Fz4SB7yy80ilMc0/view" target="_blank">Catálogo</a>
+    <a href="#catalogo">Buscar</a>
     <a href="https://wa.me/558530318830?text=Ol%C3%A1%2C%20quero%20atendimento%20pelo%20Waves%20HUB." target="_blank">WhatsApp</a>
   </nav>
 
