@@ -1,13 +1,1 @@
-self.addEventListener("install", event => {
-  event.waitUntil(
-    caches.open("waves-hub-v2").then(cache => {
-      return cache.addAll(["./", "index.html", "style.css", "script.js", "manifest.json"]);
-    })
-  );
-});
-
-self.addEventListener("fetch", event => {
-  event.respondWith(
-    caches.match(event.request).then(response => response || fetch(event.request))
-  );
-});
+self.addEventListener('install',event=>{event.waitUntil(caches.open('catalogo-waves-plus-v3').then(cache=>cache.addAll(['./','index.html','estilo.css','script.js','manifest.json'])))});self.addEventListener('fetch',event=>{event.respondWith(caches.match(event.request).then(response=>response||fetch(event.request)))})
