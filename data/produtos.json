@@ -1,0 +1,126 @@
+[
+  {
+    "id": "eletrodo-6013-pro-blue",
+    "code": "6885",
+    "name": "Eletrodo E-6013 PRO Blue",
+    "category": "Solda",
+    "subcategory": "Eletrodos",
+    "measure": "2,50mm",
+    "package": "5kg / 20kg",
+    "image": "assets/produtos/eletrodo-6013-pro-blue.png",
+    "page": 6,
+    "description": "Eletrodo rutílico para soldagem em estruturas leves em aço carbono, reparos, manutenção e serralheria.",
+    "applications": [
+      "Serralheria",
+      "Manutenção e reparos",
+      "Estruturas metálicas leves"
+    ]
+  },
+  {
+    "id": "disco-corte-inox",
+    "code": "7404",
+    "name": "Disco Corte Inox",
+    "category": "Abrasivos",
+    "subcategory": "Discos de Corte",
+    "measure": "4½” 115 x 1,0 x 22,2mm",
+    "package": "50 / 400 unidades",
+    "image": "assets/produtos/eletrodo-6013-pro-blue.png",
+    "page": 16,
+    "description": "Disco de corte para aço inoxidável, chapas, tubos, barras e perfis.",
+    "applications": [
+      "Aço inox",
+      "Tubos",
+      "Chapas",
+      "Barras"
+    ]
+  },
+  {
+    "id": "andaime-metalico",
+    "code": "10351",
+    "name": "Andaime Metálico",
+    "category": "Andaimes e Escoras",
+    "subcategory": "Andaimes",
+    "measure": "1,00m x 1,50m",
+    "package": "1 unidade",
+    "image": "assets/produtos/eletrodo-6013-pro-blue.png",
+    "page": 12,
+    "description": "Andaime padrão para obras, manutenção e trabalhos em altura com segurança.",
+    "applications": [
+      "Construção civil",
+      "Obras",
+      "Manutenção",
+      "Montagem"
+    ]
+  },
+  {
+    "id": "escora-metalica",
+    "code": "10352",
+    "name": "Escora Metálica",
+    "category": "Andaimes e Escoras",
+    "subcategory": "Escoras",
+    "measure": "2,00m a 3,20m",
+    "package": "1 unidade",
+    "image": "assets/produtos/eletrodo-6013-pro-blue.png",
+    "page": 13,
+    "description": "Escora metálica para sustentação temporária em obras, lajes, vigas e formas.",
+    "applications": [
+      "Escoramento",
+      "Lajes",
+      "Vigas",
+      "Construção civil"
+    ]
+  },
+  {
+    "id": "solda-mig",
+    "code": "6907",
+    "name": "Solda MIG",
+    "category": "Solda",
+    "subcategory": "Arames",
+    "measure": "0,8mm",
+    "package": "15kg",
+    "image": "assets/produtos/eletrodo-6013-pro-blue.png",
+    "page": 10,
+    "description": "Arame sólido para soldagem MIG/MAG, ideal para trabalhos leves a médios.",
+    "applications": [
+      "Oficinas",
+      "Indústria",
+      "Serralheria",
+      "MIG/MAG"
+    ]
+  },
+  {
+    "id": "escova-aco",
+    "code": "10287",
+    "name": "Escova Manual de Aço",
+    "category": "Ferramentas",
+    "subcategory": "Escovas",
+    "measure": "240mm",
+    "package": "12 / 120 unidades",
+    "image": "assets/produtos/eletrodo-6013-pro-blue.png",
+    "page": 8,
+    "description": "Escova manual para limpeza pesada, remoção de ferrugem, tintas e rebarbas.",
+    "applications": [
+      "Limpeza",
+      "Ferrugem",
+      "Rebarbas",
+      "Acabamento"
+    ]
+  },
+  {
+    "id": "parafuso-brocante",
+    "code": "0000",
+    "name": "Parafuso Brocante",
+    "category": "Fixadores",
+    "subcategory": "Parafusos",
+    "measure": "Diversas medidas",
+    "package": "Consultar",
+    "image": "assets/produtos/eletrodo-6013-pro-blue.png",
+    "page": 81,
+    "description": "Linha de parafusos brocantes para fixação profissional.",
+    "applications": [
+      "Fixação",
+      "Estruturas",
+      "Montagem"
+    ]
+  }
+]

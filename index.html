@@ -1,1 +1,154 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Catálogo Waves Plus</title><meta name="theme-color" content="#020626"><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="estilo.css"></head><body><main class="app"><section class="screen active" id="homeScreen"><header class="hero-header"><img class="logo-waves" src="https://drive.google.com/thumbnail?id=12G4Xs9j-0iLixYeJnmbK6X2HaQs2bFM2&sz=w500" alt="Waves Plus"><img class="logo-cbs" src="https://drive.google.com/thumbnail?id=1FrqOOTLpJL7aZEqVDq5Eng_cyfOUPTzo&sz=w500" alt="CBS"></header><section class="hero-title"><span>CATÁLOGO INTELIGENTE 2026</span><h1>Catálogo <strong>Waves Plus</strong></h1><p>Tudo que você precisa, em um só lugar.</p></section><section class="search-card" onclick="openScreen('searchScreen')"><span>🔍</span><span>O que você procura hoje?</span><b>⌗</b></section><section class="quick-grid"><button onclick="openScreen('catalogScreen')"><span>📖</span><strong>Catálogo</strong><small>PDF completo</small></button><button onclick="openScreen('searchScreen')"><span>🔎</span><strong>Buscar</strong><small>Nome, código ou aplicação</small></button><button onclick="openScreen('categoriesScreen')"><span>▦</span><strong>Categorias</strong><small>Navegue por linha</small></button></section><button class="whatsapp-banner" onclick="openWhatsApp()"><span class="zap-icon">☘</span><span><strong>Falar com Consultor</strong><small>Atendimento rápido pelo WhatsApp</small></span><b>›</b></button><section class="featured"><div class="section-title"><h2>Produtos em destaque</h2><button onclick="openScreen('searchScreen')">Ver todos ›</button></div><div class="featured-row" id="featuredProducts"></div></section></section><section class="screen" id="searchScreen"><header class="topbar"><button onclick="openScreen('homeScreen')">‹</button><h2>Buscar</h2><button onclick="clearSearch()">×</button></header><div class="search-input-wrap"><span>🔍</span><input id="searchInput" type="search" placeholder="Digite produto, código ou aplicação" oninput="renderSearchProducts()"></div><p class="results-label" id="resultCount"></p><div class="product-list" id="productsList"></div></section><section class="screen" id="categoriesScreen"><header class="topbar"><button onclick="openScreen('homeScreen')">‹</button><h2>Categorias</h2><button onclick="openScreen('searchScreen')">🔍</button></header><div class="category-list" id="categoryList"></div></section><section class="screen" id="categoryProductsScreen"><header class="topbar"><button onclick="openScreen('categoriesScreen')">‹</button><h2 id="categoryTitle">Categoria</h2><button onclick="openScreen('searchScreen')">🔍</button></header><div class="chips" id="subCategoryChips"></div><div class="product-list" id="categoryProducts"></div></section><section class="screen" id="productScreen"><header class="topbar"><button onclick="goBackFromProduct()">‹</button><h2>Detalhes do Produto</h2><button onclick="openWhatsApp()">☎</button></header><article class="product-detail" id="productDetail"></article></section><section class="screen" id="catalogScreen"><header class="topbar"><button onclick="openScreen('homeScreen')">‹</button><h2>Catálogo 2026</h2><button onclick="openWhatsApp()">☎</button></header><div class="catalog-card"><div class="catalog-cover"><img src="https://drive.google.com/thumbnail?id=1JUZRykitPg1_Isv2_Fz4SB7yy80ilMc0&sz=w1000" alt="Catálogo Waves Plus 2026"></div><h3>Catálogo Waves Plus 2026</h3><p>Abra o PDF oficial completo em uma nova aba.</p><a class="primary-btn" target="_blank" href="https://drive.google.com/file/d/1JUZRykitPg1_Isv2_Fz4SB7yy80ilMc0/view">Abrir / Baixar Catálogo</a></div></section></main><nav class="bottom-nav"><button class="nav-item active" data-screen="homeScreen" onclick="openScreen('homeScreen')">⌂<span>Início</span></button><button class="nav-item" data-screen="searchScreen" onclick="openScreen('searchScreen')">⌕<span>Buscar</span></button><button class="nav-item" data-screen="categoriesScreen" onclick="openScreen('categoriesScreen')">▦<span>Categorias</span></button><button class="nav-item" onclick="openWhatsApp()">☘<span>WhatsApp</span></button></nav><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Catálogo Waves Plus</title>
+
+  <meta name="theme-color" content="#020626" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body>
+  <main class="app">
+
+    <section class="screen active" id="homeScreen">
+      <header class="hero-header">
+        <img class="logo-waves" src="https://drive.google.com/thumbnail?id=12G4Xs9j-0iLixYeJnmbK6X2HaQs2bFM2&sz=w500" alt="Waves Plus">
+        <img class="logo-cbs" src="https://drive.google.com/thumbnail?id=1FrqOOTLpJL7aZEqVDq5Eng_cyfOUPTzo&sz=w500" alt="CBS Importadora">
+      </header>
+
+      <section class="hero-title">
+        <span>CATÁLOGO INTELIGENTE 2026</span>
+        <h1>Catálogo <strong>Waves Plus</strong></h1>
+        <p>Tudo que você precisa, em um só lugar.</p>
+      </section>
+
+      <section class="search-card" onclick="openScreen('searchScreen')">
+        <span class="search-icon">🔍</span>
+        <span>O que você procura hoje?</span>
+        <span class="scan-icon">⌗</span>
+      </section>
+
+      <section class="quick-grid">
+        <button onclick="openScreen('catalogScreen')">
+          <span>📖</span>
+          <strong>Catálogo</strong>
+          <small>PDF completo</small>
+        </button>
+
+        <button onclick="openScreen('searchScreen')">
+          <span>🔎</span>
+          <strong>Buscar</strong>
+          <small>Nome, código ou aplicação</small>
+        </button>
+
+        <button onclick="openScreen('categoriesScreen')">
+          <span>▦</span>
+          <strong>Categorias</strong>
+          <small>Navegue por linha</small>
+        </button>
+      </section>
+
+      <button class="whatsapp-banner" onclick="openWhatsApp()">
+        <span class="zap-icon">☘</span>
+        <span>
+          <strong>Falar com Consultor</strong>
+          <small>Atendimento rápido pelo WhatsApp</small>
+        </span>
+        <b>›</b>
+      </button>
+
+      <section class="featured">
+        <div class="section-title">
+          <h2>Produtos em destaque</h2>
+          <button onclick="openScreen('searchScreen')">Ver todos ›</button>
+        </div>
+
+        <div class="featured-row" id="featuredProducts"></div>
+      </section>
+    </section>
+
+    <section class="screen" id="searchScreen">
+      <header class="topbar">
+        <button onclick="openScreen('homeScreen')">‹</button>
+        <h2>Buscar</h2>
+        <button onclick="clearSearch()">×</button>
+      </header>
+
+      <div class="search-input-wrap">
+        <span>🔍</span>
+        <input id="searchInput" type="search" placeholder="Digite produto, código ou aplicação" oninput="renderSearchProducts()" />
+      </div>
+
+      <p class="results-label" id="resultCount"></p>
+
+      <div class="product-list" id="productsList"></div>
+    </section>
+
+    <section class="screen" id="categoriesScreen">
+      <header class="topbar">
+        <button onclick="openScreen('homeScreen')">‹</button>
+        <h2>Categorias</h2>
+        <button onclick="openScreen('searchScreen')">🔍</button>
+      </header>
+
+      <div class="category-list" id="categoryList"></div>
+    </section>
+
+    <section class="screen" id="categoryProductsScreen">
+      <header class="topbar">
+        <button onclick="openScreen('categoriesScreen')">‹</button>
+        <h2 id="categoryTitle">Categoria</h2>
+        <button onclick="openScreen('searchScreen')">🔍</button>
+      </header>
+
+      <div class="chips" id="subCategoryChips"></div>
+      <div class="product-list" id="categoryProducts"></div>
+    </section>
+
+    <section class="screen" id="productScreen">
+      <header class="topbar">
+        <button onclick="goBackFromProduct()">‹</button>
+        <h2>Detalhes do Produto</h2>
+        <button onclick="openWhatsApp()">☎</button>
+      </header>
+
+      <article class="product-detail" id="productDetail"></article>
+    </section>
+
+    <section class="screen" id="catalogScreen">
+      <header class="topbar">
+        <button onclick="openScreen('homeScreen')">‹</button>
+        <h2>Catálogo 2026</h2>
+        <button onclick="openWhatsApp()">☎</button>
+      </header>
+
+      <div class="catalog-card">
+        <div class="catalog-cover">
+          <img src="https://drive.google.com/thumbnail?id=1JUZRykitPg1_Isv2_Fz4SB7yy80ilMc0&sz=w1000" alt="Catálogo Waves Plus 2026">
+        </div>
+
+        <h3>Catálogo Waves Plus 2026</h3>
+        <p>Abra o PDF oficial completo em uma nova aba.</p>
+
+        <a class="primary-btn" target="_blank" href="https://drive.google.com/file/d/1JUZRykitPg1_Isv2_Fz4SB7yy80ilMc0/view">
+          Abrir / Baixar Catálogo
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <nav class="bottom-nav">
+    <button class="nav-item active" data-screen="homeScreen" onclick="openScreen('homeScreen')">⌂<span>Início</span></button>
+    <button class="nav-item" data-screen="searchScreen" onclick="openScreen('searchScreen')">⌕<span>Buscar</span></button>
+    <button class="nav-item" data-screen="categoriesScreen" onclick="openScreen('categoriesScreen')">▦<span>Categorias</span></button>
+    <button class="nav-item" onclick="openWhatsApp()">☘<span>WhatsApp</span></button>
+  </nav>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Abrasivos",
+    "icon": "⚙️",
+    "description": "Discos, rebolos, escovas e muito mais"
+  },
+  {
+    "name": "Solda",
+    "icon": "🛠️",
+    "description": "Eletrodos, arames, máquinas e acessórios"
+  },
+  {
+    "name": "Ferramentas",
+    "icon": "🧰",
+    "description": "Ferramentas manuais e acessórios"
+  },
+  {
+    "name": "Fixadores",
+    "icon": "🔩",
+    "description": "Parafusos, porcas, arruelas e muito mais"
+  },
+  {
+    "name": "Andaimes e Escoras",
+    "icon": "🏗️",
+    "description": "Soluções para sua obra com segurança"
+  }
+]
