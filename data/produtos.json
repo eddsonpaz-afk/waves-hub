@@ -1,96 +1,96 @@
 [
   {
-    "id": "eletrodo-6013-pro-blue",
-    "code": "6885",
-    "name": "Eletrodo E-6013",
-    "category": "Solda",
-    "subcategory": "Eletrodos",
-    "measure": "2,50mm • 5kg / 20kg",
-    "image": "assets/produtos/eletrodo-6013-pro-blue.png",
-    "description": "Eletrodo rutílico para soldagem em todas as posições. Excelente abertura e estabilidade de arco.",
-    "applications": [
+    "codigo": "6885",
+    "nome": "Eletrodo E-6013 PRO Blue",
+    "categoria": "Solda",
+    "subcategoria": "Eletrodos",
+    "medida": "2,50mm • 5kg / 20kg",
+    "descricao": "Eletrodo rutílico para soldagem em todas as posições. Excelente abertura e estabilidade de arco.",
+    "aplicacoes": [
       "Estruturas metálicas",
       "Serralheria",
       "Manutenção e reparos"
-    ]
+    ],
+    "pagina": 6,
+    "destaque": true
   },
   {
-    "id": "disco-corte-inox",
-    "code": "7404",
-    "name": "Disco Corte Inox",
-    "category": "Abrasivos",
-    "subcategory": "Discos de Corte",
-    "measure": "4½” 115 x 1,0 x 22,2mm",
-    "image": "assets/produtos/disco-corte-inox.svg",
-    "description": "Disco de corte para aço inoxidável, chapas, tubos, barras e perfis.",
-    "applications": [
+    "codigo": "7404",
+    "nome": "Disco Corte Inox",
+    "categoria": "Abrasivos",
+    "subcategoria": "Discos de Corte",
+    "medida": "4½” 115 x 1,0 x 22,2mm",
+    "descricao": "Disco de corte para aço inoxidável, chapas, tubos, barras e perfis.",
+    "aplicacoes": [
       "Aço inox",
       "Tubos",
       "Chapas",
       "Barras"
-    ]
+    ],
+    "pagina": 16,
+    "destaque": true
   },
   {
-    "id": "andaime-metalico",
-    "code": "10351",
-    "name": "Andaime Metálico",
-    "category": "Andaimes e Escoras",
-    "subcategory": "Andaimes",
-    "measure": "1,00m x 1,50m",
-    "image": "assets/produtos/andaime-metalico.svg",
-    "description": "Andaime padrão para obras, manutenção e trabalhos em altura com segurança.",
-    "applications": [
+    "codigo": "10351",
+    "nome": "Andaime Metálico",
+    "categoria": "Andaimes e Escoras",
+    "subcategoria": "Andaimes",
+    "medida": "1,00m x 1,50m",
+    "descricao": "Andaime padrão para obras, manutenção e trabalhos em altura com segurança.",
+    "aplicacoes": [
       "Construção civil",
       "Obras",
       "Manutenção",
       "Montagem"
-    ]
+    ],
+    "pagina": 12,
+    "destaque": true
   },
   {
-    "id": "escora-metalica",
-    "code": "10352",
-    "name": "Escora Metálica",
-    "category": "Andaimes e Escoras",
-    "subcategory": "Escoras",
-    "measure": "2,00m a 3,20m",
-    "image": "assets/produtos/escora-metalica.svg",
-    "description": "Escora metálica para sustentação temporária em obras, lajes, vigas e formas.",
-    "applications": [
+    "codigo": "10352",
+    "nome": "Escora Metálica",
+    "categoria": "Andaimes e Escoras",
+    "subcategoria": "Escoras",
+    "medida": "2,00m a 3,20m",
+    "descricao": "Escora metálica para sustentação temporária em obras, lajes, vigas e formas.",
+    "aplicacoes": [
       "Escoramento",
       "Lajes",
       "Vigas",
       "Construção civil"
-    ]
+    ],
+    "pagina": 13,
+    "destaque": true
   },
   {
-    "id": "escova-aco",
-    "code": "10287",
-    "name": "Escova Manual de Aço",
-    "category": "Ferramentas",
-    "subcategory": "Escovas",
-    "measure": "240mm",
-    "image": "assets/produtos/escova-aco.svg",
-    "description": "Escova manual para limpeza pesada, remoção de ferrugem, tintas e rebarbas.",
-    "applications": [
+    "codigo": "10287",
+    "nome": "Escova Manual de Aço",
+    "categoria": "Ferramentas",
+    "subcategoria": "Escovas",
+    "medida": "240mm",
+    "descricao": "Escova manual para limpeza pesada, remoção de ferrugem, tintas e rebarbas.",
+    "aplicacoes": [
       "Limpeza",
       "Ferrugem",
       "Rebarbas",
       "Acabamento"
-    ]
+    ],
+    "pagina": 8,
+    "destaque": false
   },
   {
-    "id": "parafuso-brocante",
-    "code": "0000",
-    "name": "Parafuso Brocante",
-    "category": "Fixadores",
-    "subcategory": "Parafusos",
-    "measure": "Diversas medidas",
-    "image": "assets/produtos/parafuso-brocante.svg",
-    "description": "Linha de parafusos brocantes para fixação profissional.",
-    "applications": [
+    "codigo": "0000",
+    "nome": "Parafuso Brocante",
+    "categoria": "Fixadores",
+    "subcategoria": "Parafusos",
+    "medida": "Diversas medidas",
+    "descricao": "Linha de parafusos brocantes para fixação profissional.",
+    "aplicacoes": [
       "Fixação",
       "Estruturas",
       "Montagem"
-    ]
+    ],
+    "pagina": 81,
+    "destaque": false
   }
 ]

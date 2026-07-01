@@ -1,3 +1,1 @@
-// Service worker desativado para evitar cache antigo.
-self.addEventListener("install",()=>self.skipWaiting());
-self.addEventListener("activate",event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.map(key=>caches.delete(key)))))})
+// cache desativado para evitar versão antiga
