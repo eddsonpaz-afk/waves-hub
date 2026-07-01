@@ -9,8 +9,6 @@ function doGet() {
     const file = files.next();
     const name = file.getName();
     const code = name.split(".")[0].trim();
-
-    file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
     output[code] = "https://drive.google.com/thumbnail?id=" + file.getId() + "&sz=w1000";
   }
 

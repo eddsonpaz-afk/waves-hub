@@ -1,5 +1,18 @@
 [
   {
+    "codigo": "3502",
+    "nome": "Produto Waves 3502",
+    "categoria": "Abrasivos",
+    "subcategoria": "Linha Waves",
+    "medida": "Consultar",
+    "descricao": "Produto cadastrado pela imagem do Drive. Descrição técnica será ajustada depois.",
+    "aplicacoes": [
+      "Uso profissional"
+    ],
+    "pagina": 1,
+    "destaque": true
+  },
+  {
     "codigo": "6885",
     "nome": "Eletrodo E-6013 PRO Blue",
     "categoria": "Solda",
@@ -77,20 +90,5 @@
     ],
     "pagina": 8,
     "destaque": true
-  },
-  {
-    "codigo": "0000",
-    "nome": "Parafuso Brocante",
-    "categoria": "Fixadores",
-    "subcategoria": "Parafusos",
-    "medida": "Diversas medidas",
-    "descricao": "Linha de parafusos brocantes para fixação profissional.",
-    "aplicacoes": [
-      "Fixação",
-      "Estruturas",
-      "Montagem"
-    ],
-    "pagina": 81,
-    "destaque": false
   }
 ]
