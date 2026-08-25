@@ -14,89 +14,19 @@
 <body>
   <div class="noise" aria-hidden="true"></div>
   <header class="topbar">
-    <a class="brand" href="index.html" aria-label="Waves Express">
-      <span class="waves-word">Waves</span><span class="express-word">express</span>
-    </a>
-    <nav class="desktop-nav" aria-label="Navegação principal">
-      <a href="#produtos">Produtos</a>
-      <a href="#categorias">Categorias</a>
-      <a href="#como-funciona">Como comprar</a>
-    </nav>
-    <div class="top-actions">
-      <button class="search-toggle" id="searchToggle" aria-label="Buscar produtos">⌕</button>
-      <a class="wa-mini" href="https://wa.me/558530318830" target="_blank" rel="noopener">WhatsApp</a>
-    </div>
+    <a class="brand brand-logo" href="index.html" aria-label="Waves Express"><img src="https://raw.githubusercontent.com/eddsonpaz-afk/waves-hub/waves-express/waves-express/assets/logo-waves-official.webp" alt="Waves Plus Eletrodos & Abrasivos" /><span class="express-pill">EXPRESS</span></a>
+    <nav class="desktop-nav" aria-label="Navegação principal"><a href="#produtos">Produtos</a><a href="#categorias">Categorias</a><a href="#como-funciona">Como comprar</a></nav>
+    <div class="top-actions"><button class="search-toggle" id="searchToggle" aria-label="Buscar produtos">⌕</button><a class="wa-mini" href="https://wa.me/558530318830" target="_blank" rel="noopener">WhatsApp</a></div>
   </header>
-
   <main>
-    <section class="hero-modern">
-      <div class="hero-media" id="heroMedia" role="img" aria-label="Profissional trabalhando em oficina moderna"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <div class="eyebrow"><span class="pulse"></span> WAVES EXPRESS · COMPRA ASSISTIDA</div>
-        <h1>O QUE O<br>PROFISSIONAL<br>PRECISA.<br><em>SEM PERDER TEMPO.</em></h1>
-        <p>Produtos selecionados para oficina, serralheria, obra e manutenção. Você encontra, entende e chama direto no WhatsApp.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#produtos">VER PRODUTOS <span>→</span></a>
-          <a class="btn glass" href="https://wa.me/558530318830" target="_blank" rel="noopener">COMPRAR NO WHATSAPP</a>
-        </div>
-      </div>
-      <div class="hero-stats" aria-label="Benefícios">
-        <div><span>01</span><strong>COMPRA DIRETA</strong><small>sem carrinho complicado</small></div>
-        <div><span>02</span><strong>ATENDIMENTO HUMANO</strong><small>fale com quem entende</small></div>
-        <div><span>03</span><strong>PRODUTO CERTO</strong><small>descrição, fotos e vídeo</small></div>
-      </div>
-      <div class="scroll-cue">DESLIZE <span>↓</span></div>
-    </section>
-
-    <section class="smart-strip" id="categorias">
-      <div class="smart-copy">
-        <span class="section-kicker">NAVEGAÇÃO INTELIGENTE</span>
-        <h2>O que você vai fazer hoje?</h2>
-        <p>Escolha pela necessidade. A gente encurta o caminho até o produto.</p>
-      </div>
-      <div class="task-pills" id="taskPills"></div>
-    </section>
-
-    <section class="catalog-head" id="produtos">
-      <div>
-        <span class="section-kicker">SELEÇÃO WAVES EXPRESS</span>
-        <h2>Produtos que trabalham com você.</h2>
-      </div>
-      <div class="catalog-tools">
-        <label class="search-box">
-          <span>⌕</span>
-          <input id="searchInput" type="search" placeholder="Buscar produto ou código..." autocomplete="off" />
-        </label>
-        <div class="filters" id="filters"></div>
-      </div>
-    </section>
-
+    <section class="hero-modern"><div class="hero-media" id="heroMedia" role="img" aria-label="Profissional trabalhando em oficina moderna"></div><div class="hero-overlay"></div><div class="hero-content"><div class="eyebrow"><span class="pulse"></span> WAVES EXPRESS · COMPRA ASSISTIDA</div><h1>O QUE O<br>PROFISSIONAL<br>PRECISA.<br><em>SEM PERDER TEMPO.</em></h1><p>Produtos selecionados para oficina, serralheria, obra e manutenção. Você encontra, entende e chama direto no WhatsApp.</p><div class="hero-actions"><a class="btn primary" href="#produtos">VER PRODUTOS <span>→</span></a><a class="btn glass" href="https://wa.me/558530318830" target="_blank" rel="noopener">COMPRAR NO WHATSAPP</a></div></div><div class="hero-stats" aria-label="Benefícios"><div><span>01</span><strong>COMPRA DIRETA</strong><small>sem carrinho complicado</small></div><div><span>02</span><strong>ATENDIMENTO HUMANO</strong><small>fale com quem entende</small></div><div><span>03</span><strong>PRODUTO CERTO</strong><small>fotos reais e descrição clara</small></div></div><div class="scroll-cue">DESLIZE <span>↓</span></div></section>
+    <section class="smart-strip" id="categorias"><div class="smart-copy"><span class="section-kicker">NAVEGAÇÃO INTELIGENTE</span><h2>O que você vai fazer hoje?</h2><p>Escolha pela necessidade. A gente encurta o caminho até o produto certo.</p></div><div class="task-pills" id="taskPills"></div></section>
+    <section class="catalog-head" id="produtos"><div><span class="section-kicker">SELEÇÃO WAVES EXPRESS</span><h2>Produtos que trabalham com você.</h2></div><div class="catalog-tools"><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar produto ou código..." autocomplete="off" /></label><div class="filters" id="filters"></div></div></section>
     <section class="product-grid" id="productGrid" aria-live="polite"></section>
-
-    <section class="experience" id="como-funciona">
-      <div class="experience-copy">
-        <span class="section-kicker">WAVES EXPRESS</span>
-        <h2>Comprar ferramenta não precisa parecer preencher formulário de banco.</h2>
-        <p>Você vê o produto com calma, entende aplicação e especificações e, quando estiver pronto, fala direto com a Waves.</p>
-        <a class="text-link" href="https://wa.me/558530318830" target="_blank" rel="noopener">FALAR COM A WAVES AGORA →</a>
-      </div>
-      <div class="steps-modern">
-        <article><b>01</b><div><h3>ENCONTRE</h3><p>Use busca, categoria ou necessidade.</p></div></article>
-        <article><b>02</b><div><h3>ENTENDA</h3><p>Fotos para cima, vídeo, descrição e ficha técnica.</p></div></article>
-        <article><b>03</b><div><h3>CHAME</h3><p>O WhatsApp já abre com produto e código preenchidos.</p></div></article>
-      </div>
-    </section>
+    <section class="experience" id="como-funciona"><div class="experience-copy"><span class="section-kicker">WAVES EXPRESS</span><h2>Do produto certo ao atendimento certo. Sem etapas desnecessárias.</h2><p>Você vê o produto com calma, entende aplicação e especificações e, quando estiver pronto, fala direto com a Waves.</p><a class="text-link" href="https://wa.me/558530318830" target="_blank" rel="noopener">FALAR COM A WAVES AGORA →</a></div><div class="steps-modern"><article><b>01</b><div><h3>ENCONTRE</h3><p>Use busca, categoria ou necessidade.</p></div></article><article><b>02</b><div><h3>ENTENDA</h3><p>Veja fotos reais, especificações e aplicação.</p></div></article><article><b>03</b><div><h3>CHAME</h3><p>O WhatsApp já abre com produto e código preenchidos.</p></div></article></div></section>
   </main>
-
-  <footer>
-    <a class="brand footer-brand" href="index.html"><span class="waves-word">Waves</span><span class="express-word">express</span></a>
-    <div class="footer-copy"><strong>Parceira do profissional.</strong><span>Fortaleza · atendimento pelo WhatsApp</span></div>
-    <a class="footer-cta" href="https://wa.me/558530318830" target="_blank" rel="noopener">(85) 3031-8830 →</a>
-  </footer>
-
-  <div class="floating-wa"><a href="https://wa.me/558530318830" target="_blank" rel="noopener" aria-label="Comprar pelo WhatsApp">◉</a></div>
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <footer><a class="brand brand-logo footer-brand" href="index.html"><img src="https://raw.githubusercontent.com/eddsonpaz-afk/waves-hub/waves-express/waves-express/assets/logo-waves-official.webp" alt="Waves Plus Eletrodos & Abrasivos" /><span class="express-pill">EXPRESS</span></a><div class="footer-copy"><strong>Parceira do profissional.</strong><span>Fortaleza · atendimento pelo WhatsApp</span></div><a class="footer-cta" href="https://wa.me/558530318830" target="_blank" rel="noopener">(85) 3031-8830 →</a></footer>
+  <div class="floating-wa"><a href="https://wa.me/558530318830" target="_blank" rel="noopener" aria-label="Comprar pelo WhatsApp">✆</a></div>
+  <script src="data.js"></script><script src="app.js"></script>
 </body>
 </html>
