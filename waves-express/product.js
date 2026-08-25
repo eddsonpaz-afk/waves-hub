@@ -15,7 +15,7 @@ const chips=(p.variantChips||p.specs.slice(0,4));
 root.innerHTML=`<div class="product-shell">
  <section class="product-media-column"><div class="media-header"><span>FOTOS + VÍDEO · ROLE PARA CIMA</span><span class="media-progress">${slides.map((_,i)=>`<i class="${i===0?'active':''}"></i>`).join('')}</span></div><div class="media-wrap"><div class="media-stack" id="mediaStack">${slides.join('')}</div></div></section>
  <aside class="product-info"><div class="crumb">Início / ${p.category} / ${p.name}</div><div class="category">${p.category} · CÓD. ${p.code}</div><h1>${p.name}</h1>
- <div class="product-rating"><span class="stars">★★★★★</span><small>Produto selecionado Waves Express</small></div><p class="lead">${p.desc}</p>
+ <div class="product-rating"><span class="selection-mark">✓</span><small>Produto selecionado Waves Express</small></div><p class="lead">${p.desc}</p>
  <div class="chips">${chips.map(x=>`<span>${x}</span>`).join('')}</div>
  <div class="price-box"><small>CONDIÇÃO WAVES EXPRESS</small><div class="consult">FALE COM A GENTE</div><small class="price-help">Valor, disponibilidade e entrega confirmados direto pelo WhatsApp.</small></div>
  <a class="buy-big" href="${wa}" target="_blank" rel="noopener">◉ &nbsp; QUERO COMPRAR PELO WHATSAPP</a>
