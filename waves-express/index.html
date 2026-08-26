@@ -10,6 +10,42 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Hero Waves Express — override final */
+    .hero-modern{height:min(760px,calc(100vh - 74px));min-height:620px;overflow:hidden}
+    .hero-media{background-image:linear-gradient(135deg,#132c39,#071722);background-size:cover;background-position:center center;transform:scale(1.01)}
+    .hero-overlay{background:linear-gradient(90deg,rgba(3,13,20,.86) 0%,rgba(4,17,25,.62) 31%,rgba(4,15,22,.15) 59%,rgba(4,15,22,.04) 100%),linear-gradient(0deg,rgba(7,23,34,.94) 0%,transparent 25%)}
+    .hero-content{top:48%;transform:translateY(-50%);max-width:565px}
+    .hero-modern h1{font-size:clamp(64px,6.15vw,96px);line-height:.84;margin:15px 0 20px}
+    .hero-content>p{max-width:500px;font-size:15px;line-height:1.65}
+    .hero-stats{right:28px;top:26px;bottom:auto;width:230px;grid-template-columns:1fr;background:rgba(7,27,41,.72);backdrop-filter:blur(11px)}
+    .hero-stats div{padding:12px 15px;border-right:0;border-bottom:1px solid rgba(255,255,255,.10)}
+    .hero-stats div:last-child{border-bottom:0}
+    .hero-stats span{font-size:25px}.hero-stats strong{font-size:10px}.hero-stats small{font-size:9px}
+    @media (max-width:980px){
+      .hero-modern{height:auto;min-height:0;padding:0 0 24px;overflow:visible;background:#071722}
+      .hero-media{position:relative;inset:auto;height:560px;transform:none;background-position:center 22%;background-size:cover}
+      .hero-overlay{top:0;height:560px;bottom:auto;background:linear-gradient(0deg,#071722 0%,rgba(7,23,34,.48) 28%,rgba(7,23,34,.08) 61%,transparent 100%)}
+      .hero-content{position:relative;left:auto;top:auto;transform:none;padding:24px 24px 16px;max-width:none}
+      .hero-modern h1{font-size:58px;line-height:.85;margin:12px 0 16px}
+      .hero-content>p{font-size:14px;max-width:620px}
+      .hero-stats{position:relative;right:auto;top:auto;width:auto;margin:14px 24px 0;grid-template-columns:repeat(3,1fr)}
+      .hero-stats div{padding:12px 12px;border-bottom:0;border-right:1px solid rgba(255,255,255,.10)}
+      .hero-stats div:last-child{border-right:0}
+      .scroll-cue{display:none}
+    }
+    @media (max-width:680px){
+      .topbar{height:70px;padding:0 12px;gap:8px}.brand-logo img{width:106px}.express-pill{height:30px;padding:0 9px;font-size:9px}.wa-mini{padding:9px 10px;font-size:10px}.search-toggle{width:36px;height:36px}
+      .hero-media{height:430px;background-position:center 18%}
+      .hero-overlay{height:430px;background:linear-gradient(0deg,#071722 0%,rgba(7,23,34,.32) 32%,rgba(7,23,34,.02) 66%,transparent 100%)}
+      .hero-content{padding:22px 18px 12px}
+      .eyebrow{font-size:9px;letter-spacing:.12em}
+      .hero-modern h1{font-size:51px;line-height:.87;margin:11px 0 14px}
+      .hero-content>p{font-size:14px;line-height:1.58;color:#e4edf1}
+      .hero-actions{display:grid;grid-template-columns:1fr;gap:9px;margin-top:18px}.btn{justify-content:center;padding:14px 16px}
+      .hero-stats{margin:12px 18px 0;grid-template-columns:1fr;gap:0}.hero-stats div{border-right:0;border-bottom:1px solid rgba(255,255,255,.10);display:grid;grid-template-columns:40px 1fr;column-gap:8px}.hero-stats div:last-child{border-bottom:0}.hero-stats span{grid-row:1/3}.hero-stats strong{align-self:end}.hero-stats small{align-self:start}
+    }
+  </style>
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -19,7 +55,7 @@
     <div class="top-actions"><button class="search-toggle" id="searchToggle" aria-label="Buscar produtos">⌕</button><a class="wa-mini" href="https://wa.me/558530318830" target="_blank" rel="noopener">WhatsApp</a></div>
   </header>
   <main>
-    <section class="hero-modern"><div class="hero-media" id="heroMedia" role="img" aria-label="Profissional trabalhando em oficina moderna"></div><div class="hero-overlay"></div><div class="hero-content"><div class="eyebrow"><span class="pulse"></span> WAVES EXPRESS · COMPRA ASSISTIDA</div><h1>O QUE O<br>PROFISSIONAL<br>PRECISA.<br><em>SEM PERDER TEMPO.</em></h1><p>Produtos selecionados para oficina, serralheria, obra e manutenção. Você encontra, entende e chama direto no WhatsApp.</p><div class="hero-actions"><a class="btn primary" href="#produtos">VER PRODUTOS <span>→</span></a><a class="btn glass" href="https://wa.me/558530318830" target="_blank" rel="noopener">COMPRAR NO WHATSAPP</a></div></div><div class="hero-stats" aria-label="Benefícios"><div><span>01</span><strong>COMPRA DIRETA</strong><small>sem carrinho complicado</small></div><div><span>02</span><strong>ATENDIMENTO HUMANO</strong><small>fale com quem entende</small></div><div><span>03</span><strong>PRODUTO CERTO</strong><small>fotos reais e descrição clara</small></div></div><div class="scroll-cue">DESLIZE <span>↓</span></div></section>
+    <section class="hero-modern"><div class="hero-media" id="heroMedia" role="img" aria-label="Profissional Waves Plus em oficina moderna com produtos da marca"></div><div class="hero-overlay"></div><div class="hero-content"><div class="eyebrow"><span class="pulse"></span> WAVES EXPRESS · COMPRA ASSISTIDA</div><h1>O QUE O<br>PROFISSIONAL<br>PRECISA.<br><em>SEM PERDER TEMPO.</em></h1><p>A Waves Plus reúne abrasivos, eletrodos, ferramentas e acessórios em uma compra assistida simples: viu, entendeu e chamou no WhatsApp.</p><div class="hero-actions"><a class="btn primary" href="#produtos">VER PRODUTOS <span>→</span></a><a class="btn glass" href="https://wa.me/558530318830" target="_blank" rel="noopener">COMPRAR NO WHATSAPP</a></div></div><div class="hero-stats" aria-label="Benefícios"><div><span>01</span><strong>COMPRA DIRETA</strong><small>sem carrinho complicado</small></div><div><span>02</span><strong>ATENDIMENTO HUMANO</strong><small>fale com quem entende</small></div><div><span>03</span><strong>PRODUTO CERTO</strong><small>fotos reais e descrição clara</small></div></div><div class="scroll-cue">DESLIZE <span>↓</span></div></section>
     <section class="smart-strip" id="categorias"><div class="smart-copy"><span class="section-kicker">NAVEGAÇÃO INTELIGENTE</span><h2>O que você vai fazer hoje?</h2><p>Escolha pela necessidade. A gente encurta o caminho até o produto certo.</p></div><div class="task-pills" id="taskPills"></div></section>
     <section class="catalog-head" id="produtos"><div><span class="section-kicker">SELEÇÃO WAVES EXPRESS</span><h2>Produtos que trabalham com você.</h2></div><div class="catalog-tools"><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar produto ou código..." autocomplete="off" /></label><div class="filters" id="filters"></div></div></section>
     <section class="product-grid" id="productGrid" aria-live="polite"></section>
@@ -28,5 +64,26 @@
   <footer><a class="brand brand-logo footer-brand" href="index.html"><img src="https://raw.githubusercontent.com/eddsonpaz-afk/waves-hub/waves-express/waves-express/assets/logo-waves-official.webp" alt="Waves Plus Eletrodos & Abrasivos" /><span class="express-pill">EXPRESS</span></a><div class="footer-copy"><strong>Parceira do profissional.</strong><span>Fortaleza · atendimento pelo WhatsApp</span></div><a class="footer-cta" href="https://wa.me/558530318830" target="_blank" rel="noopener">(85) 3031-8830 →</a></footer>
   <div class="floating-wa"><a href="https://wa.me/558530318830" target="_blank" rel="noopener" aria-label="Comprar pelo WhatsApp">✆</a></div>
   <script src="data.js"></script><script src="app.js"></script>
+  <script>
+    (()=>{
+      const desktop='https://raw.githubusercontent.com/eddsonpaz-afk/waves-hub/waves-express/waves-express/hero-desktop.txt';
+      const mobile='https://raw.githubusercontent.com/eddsonpaz-afk/waves-hub/waves-express/waves-express/hero-mobile.txt';
+      let last='';
+      async function applyHero(){
+        const useMobile=window.matchMedia('(max-width:980px)').matches;
+        const url=useMobile?mobile:desktop;
+        if(url===last)return;
+        try{
+          const r=await fetch(url,{cache:'force-cache'});
+          if(!r.ok)throw new Error('asset');
+          const b64=(await r.text()).trim();
+          const el=document.getElementById('heroMedia');
+          if(el&&b64.length>1000){el.style.backgroundImage=`url("data:image/jpeg;base64,${b64}")`;last=url;}
+        }catch(e){console.warn('Hero Waves Express: usando fallback',e);}
+      }
+      applyHero();
+      window.addEventListener('resize',()=>{clearTimeout(window.__wavesHeroTimer);window.__wavesHeroTimer=setTimeout(applyHero,180)},{passive:true});
+    })();
+  </script>
 </body>
 </html>
